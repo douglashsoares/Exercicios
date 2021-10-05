@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.douglas.exercicios.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_basicFragment"
+            app:destination="@id/basicFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_calculatorFragment"
+            app:destination="@id/calculatorFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/basicFragment"
+        android:name="com.douglas.exercicios.BasicFragment"
+        android:label="fragment_basic"
+        tools:layout="@layout/fragment_basic" />
+    <fragment
+        android:id="@+id/calculatorFragment"
+        android:name="com.douglas.exercicios.CalculatorFragment"
+        android:label="CalculatorFragment" />
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.douglas.exercicios.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" />
+</navigation>
