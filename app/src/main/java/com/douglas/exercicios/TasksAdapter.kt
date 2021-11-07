@@ -26,8 +26,6 @@ class TasksAdapter(val tasks: List<Task>) : RecyclerView.Adapter<TasksAdapter.Ta
     class TasksViewHolder(val binding: ItemTaskBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(task: Task) {
             binding.txtTask.text = task.taskText
-
-
         }
     }
 

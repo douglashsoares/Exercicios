@@ -36,5 +36,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         />
+    <Button
+        android:id="@+id/btnPessoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pessoa"
+        app:layout_constraintTop_toBottomOf="@id/btnLista"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btnPessoas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pessoas"
+        app:layout_constraintTop_toBottomOf="@id/btnPessoa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

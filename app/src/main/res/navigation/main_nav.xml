@@ -19,6 +19,13 @@
         <action
             android:id="@+id/action_homeFragment_to_listFragment"
             app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_pessoaFragment"
+            app:destination="@id/pessoaFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_pessoasFragment"
+            app:destination="@id/pessoasFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/basicFragment"
@@ -34,4 +41,15 @@
         android:name="com.douglas.exercicios.ListFragment"
         android:label="fragment_list"
         tools:layout="@layout/fragment_list" />
+    <fragment
+        android:id="@+id/pessoaFragment"
+        android:name="com.douglas.exercicios.PessoaFragment"
+        android:label="pessoa_fragment"
+        tools:layout="@layout/pessoa_fragment" />
+    <fragment
+        android:id="@+id/pessoasFragment"
+        android:name="com.douglas.exercicios.pessoas.PessoasFragment"
+        android:label="fragment_pessoas"
+        tools:layout="@layout/fragment_pessoas" />
+
 </navigation>
