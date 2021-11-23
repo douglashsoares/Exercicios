@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp"
+        android:paddingStart="16dp"
+        >
+
+        <TextView
+            android:id="@+id/txtNomeAnimal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Nome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/txtRacaAnimal"
+            />
+
+        <TextView
+            android:id="@+id/txtNomeAnimalValor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Animal"
+            app:layout_constraintTop_toBottomOf="@+id/txtNomeAnimal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/txtRacaAnimalValor"
+            />
+
+        <TextView
+            android:id="@+id/txtRacaAnimal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Raca"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txtNomeAnimal"
+            app:layout_constraintEnd_toStartOf="@id/txtTipoAnimal"
+
+            />
+
+        <TextView
+            android:id="@+id/txtRacaAnimalValor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Raca"
+            app:layout_constraintTop_toBottomOf="@id/txtRacaAnimal"
+            app:layout_constraintStart_toEndOf="@id/txtNomeAnimalValor"
+            app:layout_constraintEnd_toStartOf="@id/txtTipoAnimalValor"
+            />
+
+        <TextView
+            android:id="@+id/txtTipoAnimal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tipo"
+            app:layout_constraintStart_toEndOf="@id/txtRacaAnimal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            />
+
+        <TextView
+            android:id="@+id/txtTipoAnimalValor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Tipo"
+            app:layout_constraintTop_toBottomOf="@id/txtTipoAnimal"
+            app:layout_constraintStart_toEndOf="@id/txtRacaAnimalValor"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <Button
+            android:id="@+id/btnEditar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Editar"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toStartOf="@id/btnExcluir"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtNomeAnimalValor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <Button
+            android:id="@+id/btnExcluir"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Excluir"
+            app:layout_constraintStart_toEndOf="@id/btnEditar"
+            app:layout_constraintTop_toBottomOf="@id/txtTipoAnimalValor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.cardview.widget.CardView>

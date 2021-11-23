@@ -25,6 +25,9 @@
         <action
             android:id="@+id/action_homeFragment_to_pessoasFragment"
             app:destination="@id/pessoasFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_animalsFragment"
+            app:destination="@id/animalsFragment" />
 
     </fragment>
     <fragment
@@ -51,5 +54,10 @@
         android:name="com.douglas.exercicios.pessoas.PessoasFragment"
         android:label="fragment_pessoas"
         tools:layout="@layout/fragment_pessoas" />
+    <fragment
+        android:id="@+id/animalsFragment"
+        android:name="com.douglas.exercicios.animais.AnimaisFragment"
+        android:label="fragment_animals"
+        tools:layout="@layout/fragment_animais" />
 
 </navigation>
